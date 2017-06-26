@@ -24,8 +24,7 @@ npm install --save-dev custom-affix-css-loader
             },  
             {   
                 test: /\.html$/,  
-                loader: 'html-loader!custom-affix-css-loader?{"type":"html","pre":"pre","suf":"suf"  
-                }'  
+                loader: 'html-loader!custom-affix-css-loader?{"type":"html","pre":"pre","suf":"suf"}'  
             }  
         ]  
 ```
@@ -34,17 +33,28 @@ npm install --save-dev custom-affix-css-loader
     You can configure your loader in the form of parameters, like this:
     {"type":"css","pre":"pre","suf":"suf"}',Where "type" refers to the file type, "pre" refers to the class prefix, "suf" refers to the class suffix。
     (css)for example:
-    <code>
+    
+```css
     .container {
         background: #FFF;
     }
-    </code>
+```
+
     after packing:
+    
+```css
     .pre-container-suf {
         background: #FFF;
     }
+```
     (html)for example:
+    
+```html
     <div class="container"></div>
+```
+
     after packing:
+```html
     <div class="pre-container-suf"></div>
+```
 
