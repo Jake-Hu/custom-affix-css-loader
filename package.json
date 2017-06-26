@@ -1,0 +1,20 @@
+{
+  "name": "custom-affix-css-loader",
+  "version": "1.0.0",
+  "description": "a css loader that Allows you to add prefixes and suffixes freely ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css-loader",
+    "prefixes",
+    "suffixes"
+  ],
+  "author": "jake__hu",
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "lodash": "^4.17.4"
+  }
+}
