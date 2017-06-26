@@ -15,6 +15,7 @@ npm install --save-dev custom-affix-css-loader
 
 <h2 align="left">Usage</h2>
     After install the loader, adding the following code in your webpack.config.js:<br>
+    <code>
         loaders:[
             { 
                 test: /\.css$/,
@@ -26,13 +27,16 @@ npm install --save-dev custom-affix-css-loader
                 }'
             }
         ]
+    </code>
 <h3 align="left">options</h3>
     You can configure your loader in the form of parameters, like this:
     {"type":"css","pre":"pre","suf":"suf"}',Where "type" refers to the file type, "pre" refers to the class prefix, "suf" refers to the class suffix。
     (css)for example:
+    <code>
     .container {
         background: #FFF;
     }
+    </code>
     after packing:
     .pre-container-suf {
         background: #FFF;
