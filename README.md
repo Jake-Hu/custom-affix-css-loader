@@ -15,18 +15,18 @@ npm install --save-dev custom-affix-css-loader
 
 <h2 align="left">Usage</h2>
     After install the loader, adding the following code in your webpack.config.js:<br>
-    <code>
-        loaders:[
-            { 
-                test: /\.css$/,
-                loader: 'style-loader!css-loader!custom-affix-css-loader?{"type":"css","pre":"pre","suf":"suf"}'
-            },
-            { 
-                test: /\.html$/,
-                loader: 'html-loader!custom-affix-css-loader?{"type":"html","pre":"pre","suf":"suf"
-                }'
-            }
-        ]
+    <code>  
+        loaders:[  
+            {   
+                test: /\.css$/,  
+                loader: 'style-loader!css-loader!custom-affix-css-loader?{"type":"css","pre":"pre","suf":"suf"}'  
+            },  
+            {   
+                test: /\.html$/,  
+                loader: 'html-loader!custom-affix-css-loader?{"type":"html","pre":"pre","suf":"suf"  
+                }'  
+            }  
+        ]  
     </code>
 <h3 align="left">options</h3>
     You can configure your loader in the form of parameters, like this:
